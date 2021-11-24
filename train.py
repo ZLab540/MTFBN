@@ -18,9 +18,9 @@ from loss import *
 # Training settings
 parser = argparse.ArgumentParser(description="PyTorch DeepDehazing")
 parser.add_argument("--tag", type=str, help="tag for this training")
-parser.add_argument("--train", default="../data/train/indoor/", type=str,
+parser.add_argument("--train", default="./data/train/indoor/", type=str,
                     help="path to load train datasets(default: none)")
-parser.add_argument("--test", default="../data/test/SOTS/indoor/", type=str,
+parser.add_argument("--test", default="./data/test/SOTS/indoor/", type=str,
                     help="path to load test datasets(default: none)")
 parser.add_argument("--batchSize", type=int, default=8, help="training batch size")
 parser.add_argument("--nEpochs", type=int, default=100, help="number of epochs to train for")
